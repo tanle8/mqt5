@@ -26,3 +26,18 @@ Be able to create a desktop application with a flexible UI using Qt widgets and 
 - Signals and Slots
 - Custom `QWidget`
 - C++14 lambda, auto, for each
+
+-----------------------------------------
+# 1. Creating a project
+## 1.1 `.pro` file is Qt's configuration project file.
+- As Qt adds speicfic file formats and C++ keywords, an intermediate build step is performed, parsing all files to generate final files.
+- This rocess is done by `qmake`, an executable from the Qt SDK.
+- It will also generate the final Makefiles for your project.
+
+A basic `.pro` file generally contains:
+- Qt modules used (`core`, `gui`, and so on)
+- Target name (`todo`,`todo.exe`, and so on)
+- Project template (`app`, `lib`, and so on)
+- Sourcesm headers, and forms
+
+
